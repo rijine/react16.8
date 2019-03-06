@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import './App.css';
+import Users from './components/users/users';
+import Navbar from './components/navbar/navbar';
+import Home from './components/home/home';
 
 class App extends Component {
   render() {
+    // const url = process.env.REACT_APP_URL;
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div>
+          <Navbar />
+          <hr />
+          <Route exact path="/" component={Home} />
+          <Route path="/login" component={Users} />
+          <Route path="/users" component={Users} />
+          <Route path="/products" component={Users} />
+          <Route path="/products/approved" component={Users} />
+        </div>
+      </Router>
     );
   }
 }

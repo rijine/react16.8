@@ -7,14 +7,18 @@
     "@types/node": "11.9.6",
     "@types/react": "16.8.6",
     "@types/react-dom": "16.8.2",
+    "bootstrap": "^4.3.1",
+    "firebase": "^5.8.5",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.5",
     "typescript": "3.3.3333"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start : .env",
     "build": "react-scripts build",
+    "build:prod": "react-scripts build : .env.production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -26,5 +30,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/firebase": "^3.2.1",
+    "@types/react-router-dom": "^4.3.1"
+  }
 }
