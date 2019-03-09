@@ -7,16 +7,16 @@ class Navbar extends Component {
       <div>
         <ul>
           <li>
-            <Link to='users/approved'>Users - NO</Link>
+            <Link to="users/approved">Users - NO</Link>
           </li>
           <li>
-            <Link to='users/unapproved'>Users - YE</Link>
+            <Link to="users/unapproved">Users - YE</Link>
           </li>
           <li>
-            <Link to='products/approved'>Products - NO</Link>
+            <Link to="products/approved">Products - NO</Link>
           </li>
           <li>
-            <Link to='products/unapproved'>Products - YE</Link>
+            <Link to="products/unapproved">Products - YE</Link>
           </li>
         </ul>
       </div>
